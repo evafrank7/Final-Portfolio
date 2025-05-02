@@ -1,0 +1,262 @@
+/**** CSS Reset ****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body > main {
+    flex: 1;
+  }
+  
+
+  /**** Footer Section ****/
+  footer {
+    padding: 2rem;
+    min-height: 150px;
+    background-color: #f4f4f4;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 150px;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .footer img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+  }
+
+  
+  /**** Navigation Bar ****/
+  .nav-elements-v2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+  }
+  
+  .nav-elements-v2 a {
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+  }
+  
+/** ABOUT PAGE **/
+  .page-title-about {
+    padding-left: 50px;
+    font-size: 36px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .submessage-about {
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .me {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+  }
+  
+  .me img {
+    max-width: 80%;
+    height: 80%;
+    border-radius: 8px;
+  }
+  
+  .story{
+    padding-left: 50px;
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+  }
+  
+  .past{
+    padding-top: 10px;
+  }
+  
+  .future-present{
+    padding-top: 8px;
+  }
+  
+  .ad {
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+  
+  .contact-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    padding-left: 50px;
+  }
+  
+  .contact-submit-about {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-submit-about:hover {
+    background-color: #333;
+  }
+  
+  
+  /** CONTACT PAGE **/
+  .page-title {
+    padding: 40px;
+    font-size: 36px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .contact-me-teaser{
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .contact-me-message{
+    padding-bottom: 10px;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  
+  .diff-font{
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: italic;
+  }
+  
+  .submessage {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+  }
+  
+  .contact-form{
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    padding: 10px;
+  }
+  
+  .contact-form-section{
+    text-align: left;
+    min-width: fit-content;
+    padding: 10px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form-section input,
+  .contact-form-section textarea {
+    box-sizing: border-box;
+    width: 500px;
+  }
+  
+  .contact-submit{
+    box-sizing: border-box;
+    width: 500px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  label{
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+  }
+  
+  .contact-submit:hover{
+    background-color: #333;
+  }
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .half-width {
+    flex: 1;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
