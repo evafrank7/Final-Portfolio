@@ -83,8 +83,9 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding-bottom: 25px;
+  padding-bottom: 100px;
 }
+
 
 .col-text {
   flex: 1;
@@ -109,11 +110,12 @@
   min-width: 250px;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .col-image img {
-  max-width: 65%;
-  height: 75%;
+  max-width: 50%;
+  height: 50%;
   border-radius: 8px;
 
 }
@@ -130,13 +132,31 @@
 
 
 /** Intro Projects **/
-/* Center .col elements horizontally and update .col style */
-.projects-background {
-  background-color: seashell;
-  display: flex;
-  justify-content: center;
+
+.intro-projects{
+  background-color: #d4d4d4;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 0 auto;
   gap: 2rem;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.projects-background-container {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.intro-projects:hover{
+  transform: scale(0.95);
+}
+
+.project-heading{
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+  font-size: 28px;
 }
 
 .col {
@@ -145,13 +165,15 @@
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+  flex: 1 1 300px;
+  max-width: 300px;
 }
 
   /**** Footer Section ****/
   footer {
     padding: 2rem;
     min-height: 150px;
-    background-color: #f4f4f4;
+    background-color: #d4d4d4;
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -168,14 +190,14 @@
     gap: 10px;
   }
   
-  .footer h4 {
+  footer h4 {
     margin: 0;
     font-size: 1rem;
   }
   
-  .footer img {
-    width: 24px;
-    height: 24px;
+  footer img {
+    width: 16px;
+    height: 16px;
   }
   
   footer p {
@@ -185,6 +207,21 @@
     text-align: right;
     font-family: "Inter", sans-serif;
     font-weight: 200;
+  }
+
+  .col-text button{
+    box-sizing: border-box;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .col-text button:hover {
+    background-color: #333;
   }
 
   
