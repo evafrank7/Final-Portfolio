@@ -24,40 +24,54 @@
     
         <section class="intro">
             <div class="col-text">
-                <h1 class="page-title"> Hello, my name is <span class="diff-font">Eva</span></h1>
-                <p> Currently a Data Analyst at Kenvue, I’m pivoting toward web development with a strong foundation in design, coding, and problem-solving. I’m actively building my skills through Codecademy and Coursera, and excited to grow as a developer.</p>
+                <h1 class="page-title"> Hello, my name is <span class="diff-font"><span id="typed-text"></span><span class="cursor">|</span></h1>
+                <p> I’m currently a Data Analyst at Kenvue transitioning into web development, blending my analytical mindset with a growing toolkit in HTML, CSS, JavaScript, and React. Through hands-on courses on Codecademy and Coursera, I’m building responsive, user-focused web apps. I’m excited to bring both structure and creativity to a development team.</p>
                 <br>
                 <p> Enjoy exploring my portfolio. </p>
                 <br>
-                <button class="contact-me-homepage"> Contact Me </button>
+                <button class="contact-me-homepage"> Let's Connect </button>
             </div>
             <div class="col-image"> 
                 <img src="./images/eva-2.png"> 
             </div>
+
+            <script>
+                const text = "Eva";
+                const speed = 320;
+                let i = 0;
+              
+                function typeWriter() {
+                  if (i < text.length) {
+                    document.getElementById("typed-text").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+              
+                window.onload = typeWriter;
+              </script>
+
         </section>
 
-        <section class="intro-projects">
-            <h2 class="project-heading">Most Recent Projects</h2>
-            <div class="projects-background-container">
-    
-              <div class="col">
-                <img src="project1.png" alt="Project 1 Screenshot" />
-                <h3>Project 1</h3>
-                <button onclick="window.location.href='https://project1.com'">View Site</button>
-              </div>
-              <div class="col">
-                <img src="project2.png" alt="Project 2 Screenshot" />
-                <h3>Project 2</h3>
-                <button onclick="window.location.href='https://project2.com'">View Site</button>
-              </div>
+        <div class="carousel-container">
+            <div class="carousel-track">
+              <img src="/images/project-images/book.jpg" alt="Project 1">
+              <img src="/images/project-images/chinese.png" alt="Project 2">
+              <img src="/images/project-images/coffee.png" alt="Project 3">
+              <img src="/images/project-images/resume.jpg" alt="Project 4">
+              <img src="/images/project-images/todo.jpg" alt="Project 5">
             </div>
-          </section>
+          </div>
 
-        <footer>
+          <footer>
             <div class="footer-left">
                 <h4>Eva Frankovic</h4>
-                <img src="./images/instagram.png" alt="Instagram">
-                <img src="./images/linkedin.png" alt="LinkedIn">
+                <a href="https://www.instagram.com/evafrankovic" target="_blank">
+                    <img src="./images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/evafrankovic" target="_blank">
+                    <img src="./images/linkedin.png" alt="LinkedIn">
+                </a>
             </div>
             <p>Est. 2025</p>
         </footer>
