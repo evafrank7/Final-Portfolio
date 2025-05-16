@@ -111,6 +111,8 @@
 
 .contact-me-homepage {
   margin-left: 50px;
+  font-size: 15px;
+  border-radius: 15px;
 }
 
 .col-image {
@@ -406,8 +408,9 @@
     font-weight: 400;
   }
 
-  h3{
+  .h3-projects{
   font-family: "Inter", sans-serif;
+  padding: 10px;
   }
 
   .project-button{
